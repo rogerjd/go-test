@@ -5,5 +5,7 @@ import (
 )
 
 func main() {
-	fmt.Print("Hello Test Go Windows")
+	//	n := "3"
+	//	fmt.Print("Hello Test Go Windows" + n)
+	fmt.Println("go test")
 }
