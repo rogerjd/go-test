@@ -8,12 +8,11 @@ import (
 
 func main() {
 	slice()
+	sortTst.Test()
 }
 
 func slice() {
-	sortTst.n
-	n := "3"
-	fmt.Print("Hello Test Go Windows" + n)
+	fmt.Print("Hello Test Go Windows")
 	fmt.Println("go test2")
 
 	slc := make([]int, 3)
