@@ -8,7 +8,8 @@ import (
 
 func main() {
 	slice()
-	sortTst.Test()
+	sortTst.NameTst()
+	sortTst.NameOrNum()
 }
 
 func slice() {

@@ -15,10 +15,12 @@ type (
 	}
 
 	//ByNum slice of Person sorted by Num
-	ByNum  []Person
+	//	ByNum []Person
+
 	ByName []Person
 )
 
+/*
 func (a ByNum) Len() int {
 	return len(a)
 }
@@ -30,6 +32,7 @@ func (a ByNum) Swap(i, j int) {
 func (a ByNum) Less(i, j int) bool {
 	return a[i].Num < a[j].Num
 }
+*/
 
 func (a ByName) Len() int {
 	return len(a)
@@ -43,7 +46,7 @@ func (a ByName) Less(i, j int) bool {
 	return a[i].Name < a[j].Name
 }
 
-func Test() {
+func NameTst() {
 	a := ByName{
 		{Name: "joe", Num: 12},
 		{Name: "abc", Num: 34},
@@ -51,5 +54,5 @@ func Test() {
 		{Name: "gji", Num: 78},
 	}
 	sort.Sort(a)
-	fmt.Println("By Name", a)
+	fmt.Println("\nBy Name", a)
 }
